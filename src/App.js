@@ -244,10 +244,17 @@ function App() {
       <BackgroundGif style={{ backgroundColor: currentShade }} />
       <ContentContainer>
         <Card style={cardProps}>
-          <Title style={{ textShadow: `3px 3px 6px ${contrastColor}80` }}>420X DOGE</Title>
+          <Title
+            style={{
+              textShadow: `3px 3px 6px ${contrastColor}80`,
+              WebkitTextStroke: `1px #282828`
+            }}
+          >
+            420X DOGE
+          </Title>
           <Subtitle style={{ textShadow: `2px 2px 4px ${contrastColor}80`, color: contrastColor }}>Much Gains, Very Solana</Subtitle>
           <CopyToClipboard text={contractAddress} onCopy={handleCopy}>
-            <ContractAddressInput 
+            <ContractAddressInput
               value={contractAddress}
               readOnly
               placeholder="Click to copy contract address"
@@ -258,8 +265,8 @@ function App() {
               }}
             />
           </CopyToClipboard>
-          <BuyButton 
-            onClick={handleBuyClick} 
+          <BuyButton
+            onClick={handleBuyClick}
             style={{
               ...buttonProps,
               backgroundColor: currentShade,
