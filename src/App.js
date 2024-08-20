@@ -278,7 +278,7 @@ function App() {
             Buy 420X DOGE
           </BuyButton>
           <SocialButtons>
-            <SocialButton href="https://t.me/doge420x" target="_blank" rel="noopener noreferrer" style={{ backgroundColor: currentShade, color: contrastColor }}>
+            <SocialButton href="https://t.me/DOGE_420x" target="_blank" rel="noopener noreferrer" style={{ backgroundColor: currentShade, color: contrastColor }}>
               <FaTelegramPlane />
             </SocialButton>
             <SocialButton href="https://x.com/doge420x" target="_blank" rel="noopener noreferrer" style={{ backgroundColor: currentShade, color: contrastColor }}>
