@@ -5,6 +5,7 @@ import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { FaTelegramPlane } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import { FaChartBar } from "react-icons/fa";
+import './App.css'
 
 
 const DOGE_COLORS = {
@@ -79,9 +80,11 @@ const Card = styled(animated.div)`
   max-width: 400px;
   text-align: center;
   color: ${DOGE_COLORS.text};
+  font-family: skinnyFont;
 `;
 
 const Title = styled.h1`
+  font-family: fatFont;
   font-size: 3rem;
   margin-bottom: 1rem;
   color: ${DOGE_COLORS.primary};
@@ -93,6 +96,7 @@ const Subtitle = styled.p`
   margin-bottom: 2rem;
   color: ${DOGE_COLORS.secondary};
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  font-family: skinnyFont;
 `;
 
 const ContractAddressInput = styled.input`
@@ -102,10 +106,11 @@ const ContractAddressInput = styled.input`
   background: rgba(255, 215, 0, 0.2);
   border: none;
   border-radius: 5px;
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   text-align: center;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-family: skinnyFont;
 
   &::placeholder {
     color: rgba(255, 255, 255, 0.7);
@@ -181,7 +186,7 @@ const CopyPopup = styled(animated.div)`
 function App() {
   const [showCopyPopup, setShowCopyPopup] = useState(false);
   const [currentShadeIndex, setCurrentShadeIndex] = useState(0);
-  const contractAddress = '7EYnhQoR9YM3N7UoaKRoA44Uy8JeaZV3qyouov87awMs';
+  const contractAddress = 'Hr2F4H15pS3Gprx2QuYkBhVfW7nvoaVtqBnQwFSupump';
 
   useEffect(() => {
     const interval = setInterval(() => {
